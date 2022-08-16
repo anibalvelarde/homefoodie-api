@@ -56,7 +56,13 @@ public class MealPlanner
     {
         for (int i = 0; i < mealCount; i++)
         {
-            yield return new Meal(this) { MainCourse = $"Main-Course-{i}", SideDish = $"Side-Dish-{i}", Dessert = $"Dessert-{i}", Drink = $"some-drink-{i}"};
+            yield return new Meal(this)
+            {
+                MainCourse = $"Main-Course-{i}",
+                SideDish = $"Side-Dish-{i}",
+                Dessert = $"Dessert-{i}",
+                Drink = $"some-drink-{i}"
+            };
         }
     }
 }
